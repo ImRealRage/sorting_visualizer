@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Sorting Algorithm Visualizer</h1>
+
+  <!-- Controls -->
+  <div id="controls">
+    <button id="new-array">Generate New Array</button>
+
+    <label for="algorithm-select">Choose Algorithm:</label>
+    <select id="algorithm-select">
+      <option value="bubbleSort">Bubble Sort</option>
+      <option value="selectionSort">Selection Sort</option>
+      <option value="insertionSort">Insertion Sort</option>
+      <option value="mergeSort">Merge Sort</option>
+      <option value="quickSort">Quick Sort</option>
+      <option value="heapSort">Heap Sort</option>
+      <option value="countingSort">Counting Sort</option>
+      <option value="radixSort">Radix Sort</option>
+      <option value="bucketSort">Bucket Sort</option>
+      <option value="shellSort">Shell Sort</option>
+    </select>
+
+    <label for="size-input">Array Size:</label>
+    <input type="range" id="size-input" min="10" max="200" value="50">
+
+    <label for="speed-input">Animation Speed:</label>
+    <input type="range" id="speed-input" min="1" max="100" value="50">
+
+    <button id="sort-button">Sort</button>
+  </div>
+
+  <!-- Algorithm Information -->
+  <div id="algorithm-info">
+    <h2>Algorithm Information</h2>
+    <p id="algorithm-description"></p>
+  </div>
+
+  <!-- Timer Display -->
+  <div id="timer">
+    <h2>Sorting Time: <span id="time-taken">0</span> ms</h2>
+  </div>
+
+  <!-- Visualization Area -->
+  <div id="array-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

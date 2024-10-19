@@ -1,0 +1,57 @@
+/* styles.css */
+
+/* Set default CSS variables */
+:root {
+    --array-size: 50; /* Default array size */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  #controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  #controls > * {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  #algorithm-info {
+    margin: 20px;
+  }
+  
+  #timer {
+    margin: 20px;
+  }
+  
+  #array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    border: 1px solid #ccc;
+  }
+  
+  .bar {
+    margin: 0 1px;
+    background-color: skyblue;
+    width: calc(100% / (var(--array-size) * 2));
+    transition: height 0.1s, background-color 0.1s;
+  }
+  
